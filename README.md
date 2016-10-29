@@ -10,7 +10,7 @@
 
 Provides fast, reliable and extensible starter for the development of Angular projects.
 
-`angular-seed` provides the following features:
+`Angular-2-ngrx-store-study` provides the following features:
 
 - Allows you to painlessly update the seed tasks of your already existing project.
 - Supports multiple Angular applications with shared codebase in a single instance of the seed.
@@ -34,7 +34,7 @@ In order to start the seed use:
 
 
 ```bash
-git clone --depth 1 https://github.com/mgechev/angular-seed.git
+git clone --depth 1 https://github.com/Liork1/Angular-2-ngrx-store-study.git
 cd angular-seed
 # install the project's dependencies
 npm install
