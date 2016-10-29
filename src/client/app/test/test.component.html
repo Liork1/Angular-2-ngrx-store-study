@@ -1,0 +1,20 @@
+<p>
+    Test Component
+</p>
+
+<input #input1 type="text">
+<input #input2 type="text">
+
+<button (click)="testSubmit({ value1: input1.value, value2: input2.value})">Test Submit</button>
+
+<br>
+
+<div *ngIf="value1$ | async">
+    Value1: 
+    <pre>{{ value1$ | async }}</pre>
+</div>
+
+<div *ngIf="value2$ | async">
+    Value1: 
+    <pre>{{ value2$ | async }}</pre>
+</div>

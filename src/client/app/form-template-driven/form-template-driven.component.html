@@ -1,0 +1,38 @@
+<p>
+    Form Template Driven
+</p>
+
+<form #form="ngForm" (ngSubmit)="logForm(form.value)">
+    <fieldset ngModelGroup="name">
+        <div>
+            <label>Firstname:</label>
+            <input type="text" name="firstname" ngModel>
+        </div>
+        <div>
+            <label>Lastname:</label>
+            <input type="text" name="lastname" ngModel>
+        </div>
+    </fieldset>
+    <fieldset ngModelGroup="address">
+        <div>
+            <label>Street:</label>
+            <input type="text" name="street" ngModel>
+        </div>
+        <div>
+            <label>Zip:</label>
+            <input type="text" name="zip" ngModel>
+        </div>
+        <div>
+            <label>City:</label>
+            <input type="text" name="city" ngModel>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </fieldset>
+</form>
+
+<section *ngIf="address$ | async">
+  Yeah! Login Information:
+
+</section>

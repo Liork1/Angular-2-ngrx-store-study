@@ -1,0 +1,7 @@
+form label {
+    background-color: lightgray;
+    width: 200px;
+    display: inline-block;
+    font-size: large;
+    padding: 8px 0;
+}
