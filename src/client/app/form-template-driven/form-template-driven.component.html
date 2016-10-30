@@ -32,7 +32,8 @@
     </fieldset>
 </form>
 
-<section *ngIf="address$ | async">
-  Yeah! Login Information:
-
+<section>
+  Form Information:
+    <p>{{ address$ | async | json }}</p>
+    <p>{{ name$ | async | json }}</p>
 </section>

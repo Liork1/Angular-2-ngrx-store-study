@@ -20,8 +20,8 @@ export class FormTemplateDrivenComponent {
     constructor(
         private store: Store<State>) {
 
-            this.name$ = store.select(s => s.fromFormTemplateDriven.name);
-            this.address$ = store.select(s => s.fromFormTemplateDriven.address);
+            this.name$ = store.select(s => s.formTemplateDriven.name);
+            this.address$ = store.select(s => s.formTemplateDriven.address);
     }
 
     logForm(value: any) {

@@ -6,13 +6,13 @@ import { combineReducers } from '@ngrx/store';
 import * as fromRouter from '@ngrx/router-store';
 import * as fromAuth from '../auth-ngrx/index';
 import * as fromTest from '../test/index';
-import * as fromFormTemplateDriven '../form-template-driven/index';
+import * as fromFormTemplateDriven from '../form-template-driven/index';
 
 export interface State {
   auth: fromAuth.State;
   router: fromRouter.RouterState;
   test: fromTest.State,
-  fromFormTemplateDriven: fromFormTemplateDriven.State,
+  formTemplateDriven: fromFormTemplateDriven.State,
 }
 
 const reducers = {
