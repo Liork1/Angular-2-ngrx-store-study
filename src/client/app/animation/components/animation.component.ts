@@ -13,4 +13,5 @@ import { State } from '../../shared/store';
 export class AnimationComponent{
   
     showFader : boolean = true;
+    movementState: string = 'firstpos';
 }

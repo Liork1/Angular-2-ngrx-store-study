@@ -5,3 +5,9 @@
     </my-fader>
     
     <button (click)="showFader = !showFader">Toggle</button>
+    
+    <br>
+    <movement [state]="movementState">
+      Hello Movement 
+    </movement>
+    <button (click)="movementState = movementState === 'firstpos' ? 'secondpos': 'firstpos'">Toggle Movement</button>

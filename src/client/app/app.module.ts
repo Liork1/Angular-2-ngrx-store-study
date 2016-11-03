@@ -11,6 +11,7 @@ import { HomeModule } from './home/home.module';
 import { AuthNgrxModule } from './auth-ngrx/auth-ngrx.module';
 import { TestModule } from './test/test.module';
 import { FormTemplateDrivenModule } from './form-template-driven/form-template-driven.module';
+import { AnimationModule } from './animation/animation.module';
 import { SharedModule } from './shared/shared.module';
 
 import { StoreModule } from '@ngrx/store';
@@ -30,6 +31,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
     TestModule,
     FormTemplateDrivenModule,
+    AnimationModule,
 
     StoreModule.provideStore(reducer),
     RouterStoreModule.connectRouter(),
